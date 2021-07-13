@@ -5,22 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Calculator app</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  
+ <header>
+   <h1 class="heading">calc</h1>
+   <div class="theme-tab">
+     <span id="themeTitle">THEME</span>
+     <div id="themeTab">
+     <ul>
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+     </ul>
+     <div id="themeChoser">
+       <div id="themeToggler"></div>
+     </div>
+     </div>
+   </div>
+ </header>  
+
+
+ <main style="clear: both;">
+  <div class="screen"></div>
+  <div class="keypad">
+    <div class="num-key">7</div>
+    <div class="num-key">8</div>
+    <div class="num-key">9</div>
+    <div class="num-key small-num-key">DEL</div>
+    <div class="num-key">4</div>
+    <div class="num-key">5</div>
+    <div class="num-key">6</div>
+    <div class="num-key">+</div>
+    <div class="num-key">1</div>
+    <div class="num-key">2</div>
+    <div class="num-key">3</div>
+    <div class="num-key">-</div>
+    <div class="num-key">.</div>
+    <div class="num-key">0</div>
+    <div class="num-key">/</div>
+    <div class="num-key">x</div>
+    <div style="grid-column-start: 1; grid-column-end: 3; width: 162px;" class="num-key small-num-key">RESET</div>
+    <div id="equalsKey" style="grid-column-start: 3; grid-column-end: 5; width: 162px;" class="num-key small-num-key">=</div>
+  </div>
+ </main>
 
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ismail Musharaf</a>.
   </div>
 </body>
 </html>
