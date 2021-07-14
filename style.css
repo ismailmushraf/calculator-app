@@ -6,7 +6,8 @@
 
 body {
     background: hsl(222, 26%, 31%); 
-    margin: 10px 20px;
+    margin: auto;
+    width: 35em;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
 
 .heading {
     float: left;
+    margin: 32px auto;
 }
 
 .theme-tab {
@@ -51,16 +53,16 @@ li {
 
 #themeChoser {
     width: 60px;
-    height: 20px;
+    height: 23px;
     background: hsl(223, 31%, 20%); 
     border-radius: 20px;
-    padding: 3.5px 5px;
+    padding: 4px 5px;
 }
 
 #themeToggler {
-    width: 13px;
-    height: 13px;
-    background: red;
+    width: 15px;
+    height: 15px;
+    background: hsl(6, 63%, 50%);
     border-radius: 50%;
 }
 
@@ -85,29 +87,39 @@ li {
 
 
 .num-key {
-    width: 75px;
-    height: 75px;
-    font-size: 1.5em;
+    height: 74px;
+    font-size: 1.7em;
     display: flex;
     margin: 6px;
     align-items: center;
     justify-content: center;
     background: hsl(30, 25%, 89%);
     color: hsl(221, 14%, 31%);
+    border-radius: 10px;
+    border-bottom: 5px solid hsl(28, 16%, 65%);
 }
 
 .small-num-key {
     font-size: 1em;
     background: hsl(225, 21%, 49%);
     color: white!important;
+    border-bottom: 5px solid hsl(224, 28%, 35%); 
 }
 
 #equalsKey {
    background: hsl(6, 63%, 50%); 
+   border-bottom: 5px solid hsl(6, 70%, 34%);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 90%;
+        margin: auto 20px;
+    }
 }
 
 .attribution { 
-    margin-top: 50px;
+    margin-top: 32px;
     font-size: 11px;
     text-align: center;
     clear: both;
