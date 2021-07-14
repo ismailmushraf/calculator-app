@@ -10,10 +10,6 @@ body {
     width: 35em;
 }
 
-header {
-    color: white;
-}
-
 .heading {
     float: left;
     margin: 32px auto;
@@ -23,6 +19,7 @@ header {
     float: right;
     align-items: center;
     font-size: 10px;
+    padding-top: 15px;
 }
 
 #themeTitle {
@@ -54,29 +51,31 @@ li {
 #themeChoser {
     width: 60px;
     height: 23px;
-    background: hsl(223, 31%, 20%); 
     border-radius: 20px;
     padding: 4px 5px;
+    overflow: hidden;
 }
 
 #themeToggler {
     width: 15px;
     height: 15px;
-    background: hsl(6, 63%, 50%);
     border-radius: 50%;
+    margin-left: 0px;
+    transition: margin-left .5s cubic-bezier(.42,-0.3,.78,1.25);
 }
 
 .screen {
     width: 100%;
-    height: 6em;
-    background: hsl(224, 36%, 15%); 
+    height: 96px;
     border-radius: 15px;
+    font-size: 32px;
+    text-align: right;
+    padding: 30px 25px;
 }
 
 .keypad {
     width: 100%;
     margin-top: 2em;
-    background: hsl(223, 31%, 20%);
     height: 30rem;
     border-radius: 15px;
     padding: 20px;
@@ -87,34 +86,44 @@ li {
 
 
 .num-key {
-    height: 74px;
+    padding-top: 5px;
+    height: 65px;
     font-size: 1.7em;
     display: flex;
-    margin: 6px;
+    margin: 10px;
     align-items: center;
     justify-content: center;
-    background: hsl(30, 25%, 89%);
-    color: hsl(221, 14%, 31%);
-    border-radius: 10px;
-    border-bottom: 5px solid hsl(28, 16%, 65%);
+    border-radius: 5px;
+}
+
+.num-key:hover {
+    cursor: pointer;
+    background: hsl(60, 100%, 80%)!important; 
+}
+
+.num-key:active {
+    transform: translateY(1.5px);
 }
 
 .small-num-key {
     font-size: 1em;
-    background: hsl(225, 21%, 49%);
-    color: white!important;
-    border-bottom: 5px solid hsl(224, 28%, 35%); 
 }
 
-#equalsKey {
-   background: hsl(6, 63%, 50%); 
-   border-bottom: 5px solid hsl(6, 70%, 34%);
+.small-num-key:hover {
+    background: hsl(200, 40%, 49%)!important; 
+}
+
+#equalsKey:hover {
+    background: hsl(6, 100%, 50%)!important;     
 }
 
 @media screen and (max-width: 600px) {
     body {
         width: 90%;
         margin: auto 20px;
+    }
+    .num-key {
+        margin: 6px;
     }
 }
 
