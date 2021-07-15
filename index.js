@@ -7,7 +7,7 @@ var keypad = document.getElementsByClassName("keypad")[0];
 var num_keys = document.getElementsByClassName("num-key");
 var small_num_keys = document.getElementsByClassName("small-num-key");
 var equalsKey = document.getElementById("equalsKey");
-
+var calcScreen = document.getElementById("calcScreen");
 
 function applyFirstTheme() {
     var mainBg = "hsl(222, 26%, 31%)"; 
@@ -152,6 +152,10 @@ function switchThemes(event) {
     }
 
 }
+
+////////// Calc functions /////////////////
+
+
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     themeToggler.style.marginLeft = "0px";

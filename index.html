@@ -36,27 +36,27 @@
 
  <main style="clear: both;">
    <div class="screen">
-     <span></span>
+     <span id="calcScreen"></span>
    </div>
   <div class="keypad">
-    <div class="num-key">7</div>
-    <div class="num-key">8</div>
-    <div class="num-key">9</div>
-    <div class="num-key small-num-key">DEL</div>
-    <div class="num-key">4</div>
-    <div class="num-key">5</div>
-    <div class="num-key">6</div>
-    <div class="num-key">+</div>
-    <div class="num-key">1</div>
-    <div class="num-key">2</div>
-    <div class="num-key">3</div>
-    <div class="num-key">-</div>
-    <div class="num-key">.</div>
-    <div class="num-key">0</div>
-    <div class="num-key">/</div>
-    <div class="num-key">x</div>
-    <div style="grid-column-start: 1; grid-column-end: 3;" class="num-key small-num-key">RESET</div>
-    <div id="equalsKey" style="grid-column-start: 3; grid-column-end: 5;" class="num-key small-num-key">=</div>
+    <div class="num-key" onclick="readKeys('7')">7</div>
+    <div class="num-key" onclick="readKeys('8')">8</div>
+    <div class="num-key" onclick="readKeys('9')">9</div>
+    <div class="num-key small-num-key" onclick="readKeys('del')">DEL</div>
+    <div class="num-key" onclick="readKeys('4')">4</div>
+    <div class="num-key" onclick="readKeys('5')">5</div>
+    <div class="num-key" onclick="readKeys('6')">6</div>
+    <div class="num-key" onclick="readKeys('+')">+</div>
+    <div class="num-key" onclick="readKeys('1')">1</div>
+    <div class="num-key" onclick="readKeys('2')">2</div>
+    <div class="num-key" onclick="readKeys('3')">3</div>
+    <div class="num-key" onclick="readKeys('-')">-</div>
+    <div class="num-key" onclick="readKeys('.')">.</div>
+    <div class="num-key" onclick="readKeys('0')">0</div>
+    <div class="num-key" onclick="readKeys('/')">/</div>
+    <div class="num-key" onclick="readKeys('x')">x</div>
+    <div style="grid-column-start: 1; grid-column-end: 3;" class="num-key small-num-key" onclick="readKeys('reset')">RESET</div>
+    <div id="equalsKey" style="grid-column-start: 3; grid-column-end: 5;" class="num-key small-num-key" onclick="readKeys('=')">=</div>
   </div>
  </main>
 
