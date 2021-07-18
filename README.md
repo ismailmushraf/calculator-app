@@ -62,8 +62,8 @@ Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, 
   transition: margin-left .5s;
 }
 ```
-Here, the first parameter `margin-left` is the property we need to add an animation to.
-and the second parameter `.5s` is the duration of the animation
+- Here, the first parameter `margin-left` is the property we need to add an animation to.
+- Second parameter `.5s` is the duration of the animation
 
 ```js
 const proudOfThisFunc = () => {
