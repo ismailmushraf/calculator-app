@@ -87,16 +87,13 @@ Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, 
 ```
 This helped me to center the keypad numbers vertically and horizontally in the keypad `<div>`.
 
-
+#### prefers-color-scheme
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+if (window.matchMedia('(prefers-color-scheme:dark)').matches) {
+
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Used to update the Theme according to the preference of the user.
 
 ### Continued development
 
