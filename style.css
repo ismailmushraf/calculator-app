@@ -8,6 +8,7 @@ body {
     background: hsl(222, 26%, 31%); 
     margin: auto;
     width: 35em;
+    height: fit-content;
 }
 
 .heading {
