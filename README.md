@@ -65,6 +65,23 @@ Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, 
 - Here, the first parameter `margin-left` is the property we need to add an animation to.
 - Second parameter `.5s` is the duration of the animation
 
+```css
+.keypad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+```
+- `fr` stands for "fraction of available space". It divides the space into equal number of parts.
+- `1fr` takes 25% of this space. Because there are 4 cols in a row. `100% / 4 = 25%`.
+
+```css
+.num-key {
+  align-items: center;
+  justify-content: center;
+}
+```
+This helped me to center the keypad numbers vertically and horizontally centered in the div.
+
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
