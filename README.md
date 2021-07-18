@@ -45,29 +45,26 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Some of the Things I've Learned from working on this Project, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<header>Header consist of themeToggler and Heading</header>
+<main>Main consist of Keypad</main>
 ```
+Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define its presentation or look. 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#themeToggler {
+  transition: margin-left .5s;
 }
 ```
+Here, the first parameter `margin-left` is the property we need to add an animation to.
+and the second parameter `.5s` is the duration of the animation
+
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
