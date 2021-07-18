@@ -45,6 +45,9 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
+- Neovim
+- npm live-server
+- Firefox
 
 ### What I learned
 
