@@ -8,7 +8,6 @@ body {
     background: hsl(222, 26%, 31%); 
     margin: auto;
     width: 35em;
-    height: fit-content;
 }
 
 .heading {
@@ -78,6 +77,7 @@ li {
     font-size: 12px;
     color: hsl(6, 63%, 50%);
     float: left;
+    position: absolute;
 }
 
 .keypad {
