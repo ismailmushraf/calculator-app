@@ -8,6 +8,7 @@ var num_keys = document.getElementsByClassName("num-key");
 var small_num_keys = document.getElementsByClassName("small-num-key");
 var equalsKey = document.getElementById("equalsKey");
 var calcScreen = document.getElementById("calcScreen");
+var errorMsg = document.getElementById("errorMsg");
 
 function applyFirstTheme() {
     var mainBg = "hsl(222, 26%, 31%)"; 
@@ -154,8 +155,45 @@ function switchThemes(event) {
 }
 
 ////////// Calc functions /////////////////
+var disp = "0";
 
-
+function readKeys(key) {
+    switch(key) {
+        case 'del':
+            disp = disp.slice(0, -1);
+            errorMsg.innerText = "";
+            if (disp == "") disp = "0";
+            break;
+        case 'reset':
+            break;
+        case '=':
+            try {
+                disp = Math.round(eval(disp) * 1000) / 1000 + "";
+            } catch(err) {
+                errorMsg.innerText = "malformed expression";
+            }
+            break;
+        case 'res':
+            console.log('hello');
+            disp = "0";
+            break;
+        default:
+            if (disp == "0" && key == 0) {
+                disp = "0";
+            } else {
+                if (disp == "0") disp = "";
+                disp += key;
+            }
+            errorMsg.innerText = "";
+            break;
+    }
+    if (disp.length >12) {
+        calcScreen.style.fontSize = "20px";
+    } else {
+        calcScreen.style.fontSize = "32px";
+    }
+    calcScreen.innerText = disp;
+}
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     themeToggler.style.marginLeft = "0px";

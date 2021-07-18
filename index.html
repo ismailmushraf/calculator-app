@@ -36,7 +36,8 @@
 
  <main style="clear: both;">
    <div class="screen">
-     <span id="calcScreen"></span>
+     <span id="calcScreen">0</span>
+     <div id="errorMsg"></div>
    </div>
   <div class="keypad">
     <div class="num-key" onclick="readKeys('7')">7</div>
@@ -54,8 +55,8 @@
     <div class="num-key" onclick="readKeys('.')">.</div>
     <div class="num-key" onclick="readKeys('0')">0</div>
     <div class="num-key" onclick="readKeys('/')">/</div>
-    <div class="num-key" onclick="readKeys('x')">x</div>
-    <div style="grid-column-start: 1; grid-column-end: 3;" class="num-key small-num-key" onclick="readKeys('reset')">RESET</div>
+    <div class="num-key" onclick="readKeys('*')">x</div>
+    <div style="grid-column-start: 1; grid-column-end: 3;" class="num-key small-num-key" onclick="readKeys('res')">RESET</div>
     <div id="equalsKey" style="grid-column-start: 3; grid-column-end: 5;" class="num-key small-num-key" onclick="readKeys('=')">=</div>
   </div>
  </main>
