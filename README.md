@@ -29,10 +29,10 @@ Users should be able to:
 
 ### Screenshot
 
-![dark theme in desktop](./screenshots/Screenshot1.png.jpg)
-![dark theme in mobile](./screenshots/Screenshot2.png.jpg)
-![light theme in desktop](./screenshots/Screenshot3.png.jpg)
-![customized theme in mobile](./screenshots/Screenshot3.png.jpg)
+![dark theme in desktop](./screenshots/Screenshot1.png)
+![dark theme in mobile](./screenshots/Screenshot2.png)
+![light theme in desktop](./screenshots/Screenshot3.png)
+![customized theme in mobile](./screenshots/Screenshot3.png)
 
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
