@@ -91,7 +91,6 @@ li {
     justify-content: center;
 }
 
-
 .num-key {
     padding-top: 5px;
     height: 65px;
@@ -110,7 +109,6 @@ li {
 
 .num-key:hover {
     cursor: pointer;
-    /*background: hsl(60, 100%, 80%)!important; */
 }
 
 .num-key:active {
@@ -119,14 +117,6 @@ li {
 
 .small-num-key {
     font-size: 1em;
-}
-
-.small-num-key:hover {
-    /*background: hsl(200, 40%, 49%)!important; */
-}
-
-#equalsKey:hover {
-    /*background: hsl(6, 100%, 50%)!important;     */
 }
 
 @media screen and (max-width: 600px) {
