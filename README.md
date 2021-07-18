@@ -52,11 +52,14 @@ Users should be able to:
 
 Some of the Things I've Learned from working on this Project, see below:
 
+#### Semantic HTML
 ```html
 <header>Header consist of themeToggler and Heading</header>
 <main>Main consist of Keypad</main>
 ```
 Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define its presentation or look. 
+
+#### CSS Transition
 ```css
 #themeToggler {
   transition: margin-left .5s;
@@ -65,6 +68,7 @@ Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, 
 - Here, the first parameter `margin-left` is the property we need to add an animation to.
 - Second parameter `.5s` is the duration of the animation
 
+#### Grid Display
 ```css
 .keypad {
   display: grid;
@@ -74,6 +78,7 @@ Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, 
 - `fr` stands for "fraction of available space". It divides the space into equal number of parts.
 - `1fr` takes 25% of this space. Because there are 4 cols in a row. `100% / 4 = 25%`.
 
+#### Centering Items vertically and horizontally
 ```css
 .num-key {
   align-items: center;
@@ -81,6 +86,7 @@ Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, 
 }
 ```
 This helped me to center the keypad numbers vertically and horizontally centered in the div.
+
 
 ```js
 const proudOfThisFunc = () => {
