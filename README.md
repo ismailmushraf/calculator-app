@@ -85,7 +85,7 @@ Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, 
   justify-content: center;
 }
 ```
-This helped me to center the keypad numbers vertically and horizontally centered in the div.
+This helped me to center the keypad numbers vertically and horizontally in the keypad `<div>`.
 
 
 ```js
