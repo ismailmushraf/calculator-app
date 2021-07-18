@@ -213,8 +213,75 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
     }
 });
 
-
-
+body.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    switch(event.keyCode) {
+        case 13:
+            readKeys('=');
+            break;            
+        case 48:
+        case 45:
+            readKeys('0');
+            break;
+        case 49:
+        case 35:
+            readKeys('1');
+            break;
+        case 50:
+        case 40:
+            readKeys('2');
+            break;
+        case 51:
+        case 34:
+            readKeys('3');
+            break;
+        case 52:
+        case 37:
+            readKeys('4');
+            break;
+        case 53:
+        case 12:
+            readKeys('5');
+            break;
+        case 54:
+        case 39:
+            readKeys('6');
+            break;
+        case 55:
+        case 36:
+            readKeys('7');
+            break;
+        case 56:
+        case 38:
+            readKeys('8');
+            break;
+        case 57:
+        case 33:
+            readKeys('9');
+            break;
+        case 8:
+            readKeys('del');
+            break;
+        case 107:
+            readKeys('+');
+            break;
+        case 109:
+            readKeys('-');
+            break;
+        case 106:
+            readKeys('*');
+            break;
+        case 111:
+            readKeys('/');
+            break;
+        case 110:
+            readKeys('.');
+            break;
+        case 46:
+            readKeys('res');
+            break;
+    }
+});
 
 
 
